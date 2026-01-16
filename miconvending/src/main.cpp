@@ -5,7 +5,6 @@
 #include "i2c.h"
 #include "LCD_I2C.h"
 
-// ================= PIN =================
 #define COIN_PIN   PD2      
 #define DROP1_PIN  PD3
 #define DROP2_PIN  PD4
@@ -22,11 +21,9 @@
 #define M4_IN1 PB3   
 #define M4_IN2 PB4   
 
-// ================= I2C =================
 #define LCD_ADDR     0x27
 #define BUTTON_ADDR  0x20
 
-// ================= STATE =================
 #define STATE_IDLE     0
 #define STATE_SELECT   1
 #define STATE_RUNNING  2
@@ -185,3 +182,4 @@ int main(void){
         _delay_ms(5);
     }
 }
+
